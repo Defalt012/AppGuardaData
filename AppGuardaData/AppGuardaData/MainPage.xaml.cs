@@ -32,7 +32,7 @@ namespace AppGuardaData
         private async void ButtonApagarTudo_Clicked(object sender, EventArgs e)
         {
             var confirmacao = await DisplayAlert("Confirmação","Tem certeza ?","Sim","Não");
-            if (confirmacao == true) //SQLite.SQLiteException: no such table: informações
+            if (confirmacao == true) //SQLite.SQLiteException: no such table: informaçõeswew
             {
                 string sql = "DELETE FROM informacoes";
                 ((App)Application.Current).Conexao.Execute(sql);
